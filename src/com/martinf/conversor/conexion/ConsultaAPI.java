@@ -10,7 +10,7 @@ import java.net.http.HttpResponse;
 public class ConsultaAPI {
     public Moneda buscarTasa(String monedaBase, String monedaDestino) {
         // Reemplaza 'TU-API-KEY' con tu clave real
-        String apiKey = "02a13c27d9c517e13ef433d2";
+        String apiKey = "TU-API-KEY";
         URI direccion = URI.create("https://v6.exchangerate-api.com/v6/" + apiKey + "/pair/" + monedaBase + "/" + monedaDestino);
 
         HttpClient client = HttpClient.newHttpClient(); // Paso 4: Cliente
